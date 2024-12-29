@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <p class= "link">ABOUT</p>
+        <p class= "link"><a href="html/CPL_index.html">HOME</a></p>
+        <p class= "link"><a href="html/contact.html">CONTACT</a></p>
+    </nav>
+    <div class="loginpages">
+    <div class="square">
+
+        <i style="--clr: #00ff0a;"></i>
+        <i style="--clr:#ff0057;"></i>
+        <i style="--clr:#fffd44;"></i>
+
+        <div class="login">
+
+            <h2>Login</h2>
+
+            <div class="inputBx">
+
+                <input type="text" placeholder="Username" id="username">
+
+            </div>
+
+            <div class="inputBx">
+
+                <input type="password" placeholder="Password" id="password">
+
+            </div>
+
+            <button class="inputbt" onclick="validation()">Sign In</button>
+            
+
+            <div class="links">
+
+                <a href="#" class="link1">Forget Password</a>
+                <a href="#" class="link1"><b>Signup</b></a>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+    <script>
+
+
+  
+
+    function validation()
+    { 
+        
+    const username= document.querySelector("#username").value;
+    const password= document.querySelector("#password").value;
+        if(username=="satish" && password=="coder")
+        {
+            location.assign("CPL_user.html");
+        }
+        else
+        {
+        window.alert("login failed");
+        }
+
+
+    }
+    
+
+
+    </script>
+</body>
+
+</html>

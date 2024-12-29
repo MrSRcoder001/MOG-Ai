@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    text-decoration: none;
+    color: #171535;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* background: linear-gradient(45deg, #a70fd1e3, hsla(308, 82%, 27%, 0.585)); */
+    background-color: black;
+}
+
+.navbar {
+    height: 55px;
+    background-color: #233142b3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.navbt button {
+
+    height: 30px;
+    width: 100px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #b20600;
+    color: whitesmoke;
+    transition: all 0.2s ease;
+    
+}
+
+button:active {
+    transform: scale(0.90);
+}
+
+.navbar .logo {
+    height: 50px;
+    width: 250px;
+    font-size: x-large;
+    text-shadow: 3px 3px black;
+    padding-left: 10px;
+    margin-bottom: 6px;
+
+
+
+}
+
+.strangergif {
+    width: 300px;
+    height: 280px;
+    margin-top: 20px;
+    margin-left: 360px;
+    border-radius: 10px;
+
+}
+
+.input {
+    color: black;
+    margin-left: 310px;
+    width: 410px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #b20600;
+    display:flex;
+
+  text-align: center;
+  padding-left: 80px;
+  transition: all 0.2s ease; 
+
+}
+.input #speak1 {
+    color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #b20600;
+
+}
+.input:active {
+    transform: scale(0.90);
+}
+i
+{
+    font-size:large;
+}
+h4{
+    margin-top:5px;
+}
+
+img {
+    border-radius: 10px;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOG - Virtual Assistant</title>
+  <link rel="shortcut icon" href="avatar.png" type="image/x-icon">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="navbar">
+
+    <!-- <div class="logo"><img src="style/strangerlogo.png" alt="" height="60" width="100"></div>
+        <div class="navbt">
+            <a href="Contact.html"><button id="btcontact"><b>helps</b></button></a>
+            <a href="first-index.html"><button><b>Log-out</b></button></a>
+        </div>
+   -->
+
+    <section class="main">
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="leftClick()">People</button>
+          <button type="button" class="toggle-btn" onclick="student_module()">Student</button>
+        </div>
+      </div>
+      <div class="image-container">
+        <div class="image">
+          <img src="style/Chatbot.gif" alt="MOG">
+        </div>
+        <h1> M O G</h1>
+        <p><i>I'm a Virtual Assistant Stranger MOG, How may i help you?</i></p>
+      </div>
+      <div class="input">
+        <button class="talk"><i class="fas fa-microphone-alt"></i></button>
+        <h1 class="content"> Click here to Speak</h1>
+      </div>
+    </section>
+    <aside class="sidebar">
+      <div class="newlogo">
+        <img src="style/satish.jpg" alt="logo">
+        <h2 class="username">Hacker_SR</h2>
+      </div>
+      <ul class="links">
+        <h4>Main Menu</h4>
+        <!-- <li>
+            <span class="material-symbols-outlined">dashboard</span>
+            <a href="#">Dashboard</a>
+          </li> -->
+        <!-- <li>
+            <span class="material-symbols-outlined">show_chart</span>
+            <a href="#">Revenue</a>
+          </li> -->
+        <!-- <li>
+            <span class="material-symbols-outlined">flag</span>
+            <a href="#">Reports</a>
+          </li> -->
+        <!-- <hr>
+          <h4>Advanced</h4> -->
+        <li>
+          <span class="material-symbols-outlined">person</span>
+          <a href="Contact.html">Contacts</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">group</span>
+          <a href="Contact.html">Developer </a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">ambient_screen</span>
+          <a href="#">Magic Build</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">pacemaker</span>
+          <a href="#">Theme Maker</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">monitoring</span>
+          <a href="#">Analytic</a>
+        </li>
+        <hr>
+        <h4>Account</h4>
+        <li>
+          <span class="material-symbols-outlined">bar_chart</span>
+          <a href="#">History</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">mail</span>
+          <a href="#">Message</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">settings</span>
+          <a href="#">Settings</a>
+        </li>
+        <li class="logout-link">
+          <span class="material-symbols-outlined">logout</span>
+          <a href="first-index.html">Logout</a>
+        </li>
+      </ul>
+    </aside>
+    <script src="app.js"></script>
+  </div>
+</body>
+
+</html>

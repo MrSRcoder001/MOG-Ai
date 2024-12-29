@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Speech Recognition</title>
+</head>
+<body>
+    <button id="btn">Start Listening</button>
+    <div id="content">Listening...</div>
+
+    <script>
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+        const recognition = new SpeechRecognition();
+
+        // Reference the HTML elements
+        const btn = document.getElementById('btn');
+        const content = document.getElementById('content');
+
+        recognition.onresult = (event) => {
+            const currentIndex = event.resultIndex;
+            const transcript = event.results[currentIndex][0].transcript;
+            content.textContent = transcript;
+            takeCommand(transcript.toLowerCase());
+        }
+
+        btn.addEventListener('click', () => {
+            content.textContent = "Listening...";
+            recognition.start();
+        });
+
+        function takeCommand(message) {
+            if (message.includes('hello')) {
+                speak("What happened, boss?");
+            } else {
+                speak("Make it more intelligent.");
+            }
+        }
+
+        function speak(text) {
+            // Check if SpeechSynthesis is available
+            if ('speechSynthesis' in window) {
+                const speechSynthesis = window.speechSynthesis;
+                const utterance = new SpeechSynthesisUtterance(text);
+                speechSynthesis.speak(utterance);
+            } else {
+                console.error("SpeechSynthesis is not supported in this browser.");
+            }
+        }
+    </script>
+</body>
+</html>
